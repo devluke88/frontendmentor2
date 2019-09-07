@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="16x16">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
@@ -24,8 +25,12 @@
 
       <p class="para"> Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      
-      <input name="email" id="email" type="email" placeholder="Email Address" required>
+      <form action="#">
+        <div class="form_wrapper">
+          <input name="email" id="email" type="email" placeholder="Email Address" required>
+          <button class="btn-email"><img src="images/icon-arrow.svg" alt="next" class="next"></button>
+        </div>
+      </form>
     </div>
     <div class="col col2">
       <img src="images/hero-desktop.jpg" alt="hero-desktop" class="hero-desktop">
