@@ -1,13 +1,22 @@
 /*  MEDIA QUERIES*/
 
+  
+
 @media all and (max-width:1000px) {
 
-}
-  
+    .col {
+        flex-direction: column;
+    }
+    .hero-mobile {
+        display: block;
+        width: 100%;
+        
+    }
 
-@media all and (max-width:500px) {
-  
-  
+    .hero-desktop {
+        display: none;
+        overflow: hidden;
+    }
 }
 
 @media all and (max-width:375px) {
