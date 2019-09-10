@@ -1,26 +1,79 @@
 /*  MEDIA QUERIES*/
 
-  
-
 @media all and (max-width:1000px) {
-
-    .col {
+    html {font-size: 16px;}
+    body {font-size: 16px;}
+    .wrapper {
+        display: flex;
         flex-direction: column;
     }
-    .hero-mobile {
-        display: block;
-        width: 100%;
-        
+    
+    .mobile-wrapper {
+        background-image: url(images/hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        height: 40rem; 
+        display: flex;
+        flex: 1 1 400px;
     }
 
     .hero-desktop {
         display: none;
         overflow: hidden;
     }
+
+
+    .col1 {
+        align-items: center;  
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading, .para {
+        text-align: center;
+    }
+    .col2 {
+        display:none;
+    }
+
+    form {
+        padding: 1rem 6rem 1rem 6rem;
+        display: flex;
+    }
+
+    .input-alert {
+        background-image: url(images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: 75% center;
+    }
+
+    #email {
+        font-size: 1rem;
+    }
 }
 
-@media all and (max-width:375px) {
- html {}
-
-  
+@media all and (max-width:500px) {
+    html {font-size: 14px;}
+    body {font-size: 14px;}
+    .btn-email { margin-left: -60px}
+    .mobile-wrapper {
+        height: 350px;
+        display: flex;
+        flex: 1 1 350px;
+    }
 }
+
+@media all and (max-width:500px) {
+    html {font-size: 14px;}
+    body {font-size: 14px;}
+    .btn-email { margin-left: -60px}
+    .mobile-wrapper {
+        height: 300px;
+        display: flex;
+        flex: 1 1 300px;
+    }
+   }
